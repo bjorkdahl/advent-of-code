@@ -1,0 +1,26 @@
+{
+  "name": "advent-of-code",
+  "private": true,
+  "description": "Advent of Code solutions, one workspace per year",
+  "author": "Adam Björkdahl",
+  "license": "ISC",
+  "type": "module",
+  "packageManager": "npm@11.18.0",
+  "workspaces": [
+    "20*"
+  ],
+  "scripts": {
+    "day": "node scripts/day.js",
+    "build": "turbo run build",
+    "format": "turbo run format"
+  },
+  "devDependencies": {
+    "@types/node": "^16.18.0",
+    "aocrunner": "1.10.0",
+    "prettier": "^2.4.1",
+    "turbo": "2.11.10"
+  },
+  "engines": {
+    "node": ">=22.9.0"
+  }
+}

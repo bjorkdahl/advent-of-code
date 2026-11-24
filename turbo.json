@@ -1,0 +1,18 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "ui": "tui",
+  "tasks": {
+    "build": {
+      "inputs": ["src/**", "tsconfig.json", ".aocrunner.json"],
+      "outputs": ["dist/**"]
+    },
+    "format": {
+      "cache": false
+    },
+    "day": {
+      "cache": false,
+      "persistent": true,
+      "interactive": true
+    }
+  }
+}

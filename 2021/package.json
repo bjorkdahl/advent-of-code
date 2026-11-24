@@ -1,25 +1,11 @@
 {
-  "name": "aoc2021",
-  "version": "1.0.0",
+  "name": "2021",
+  "private": true,
   "description": "Advent of Code 2021 - solutions",
   "type": "module",
   "scripts": {
-    "start": "aocrunner day",
+    "day": "node --env-file-if-exists=../.env ../node_modules/aocrunner/lib/cli.js day",
     "build": "aocrunner build",
     "format": "prettier -w src"
-  },
-  "keywords": [
-    "aoc"
-  ],
-  "author": "Adam Björkdahl",
-  "license": "ISC",
-  "devDependencies": {
-    "@types/node": "^16.18.0",
-    "aocrunner": "^1.10.0",
-    "prettier": "^2.4.1"
-  },
-  "dependencies": {},
-  "engines": {
-    "node": ">=16.0.0"
   }
 }
