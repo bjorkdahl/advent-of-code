@@ -30,10 +30,8 @@ prompt, for example `s` to send a solution.
 
 ## Adding a year
 
-1. Copy an existing year's `package.json`, `tsconfig.json`, `.aocrunner.json`
-   and `src/template`/`src/utils` into a new folder named after the year.
-2. Set `name` in its `package.json` and `year` in `.aocrunner.json`, and empty
-   the `days` list.
-3. `npm install`, then add the year to the table above.
+Just run it: `npm run day 2026 1` creates `2026/` (config, template, README,
+workspace entry and a row in the table above) the first time, then starts day 1.
+Commit the new folder afterwards.
 
 Merged from the former `aoc2021` and `aoc2022` repos with full history.
